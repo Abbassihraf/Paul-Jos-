@@ -1,0 +1,77 @@
+/* Contact section */
+
+
+.contactSection a{
+    text-decoration: none;
+    color: white;
+}
+.contactSection{
+    background-color: #5ABF28;
+    color: white;
+    padding: 8rem 0rem;
+}
+
+.contactSection h1{
+    font-family: Lobster;
+    font-size: 40px;
+}
+
+.contact-card{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: max-content max-content;
+}
+
+.contact-card-tel{
+    border-right: 2px solid #6DD539;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: max-content max-content;
+}
+
+.contact-card-tel img{
+    margin-left: 94%!important;
+}
+
+.contact-card-tel h4{
+    padding-left: 40px;
+}
+
+.contact-card-tel h3{
+    padding-left: 40px;
+}
+
+
+.contact-card .phone-number{
+    font-size: 20px;
+}
+
+.contact-card img{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: auto;
+}
+
+.contact-card h4{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    color: #9DFF6C;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: 400;
+
+}
+
+.contact-card h3{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: 0px;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    color: white;
+}
+
+/* Contact section END*/
