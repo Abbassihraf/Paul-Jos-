@@ -7,7 +7,7 @@ body{
 
 .secondSection h1 {
     font-family: Lobster;
-    font-size: 40px;
+    font-size: 48px;
     color: #5ABF28;
     margin-top: 8rem;
 }
@@ -79,12 +79,12 @@ body{
 
 .activities{
     background-image: url(/images/activities-bg.png);  
+    background-repeat: round;
     padding-top: 8rem;
-    padding-bottom: 8rem;
 }
 .activities h1{
     font-family: Lobster;
-    font-size: 40px;
+    font-size: 48px;
     color: #5ABF28;
     text-align: center;
     margin-bottom: 72px;
@@ -128,6 +128,7 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 64px;
     border: 2px solid #B4B4B4;
     color: #B4B4B4;
     background-color: transparent;
@@ -160,7 +161,79 @@ body{
 
 /* Activities section end */
 
+/* Realisations section */
 
+.realisations{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: max-content max-content;
+}
+
+.realisations div img{
+    width: 100%;
+    height: 100%;
+}
+
+.realisation-img,
+.realisation-img * {
+	box-sizing: border-box;
+}
+.realisation-img {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+}
+.realisation-img img {
+	max-width: 100%;
+}
+.realisation-img .realisation-img-layer_bottom {
+	display: block;
+}
+.realisation-img .realisation-img-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(90, 191, 40, 0.6);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.realisation-img:hover .realisation-img-layer_top,
+.realisation-img.active .realisation-img-layer_top {
+	opacity: 1;
+}
+.realisation-img .realisation-img-text {
+	text-align: center;
+	font-size: 72px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.realisation-img .realisation-img-text_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.realisation-img.active .realisation-img-text_mobile {
+	display: block;
+}
 
 /* Contact section */
 
