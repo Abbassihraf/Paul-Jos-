@@ -245,6 +245,14 @@ body{
 }
 
 
+/*  Devices (Ipad & Ipad pro, 768px and up) */
+@media (min-width: 768px) and (max-width: 1200px){
+    .realisations{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: max-content;
+    }
+}
 
 /* Contact section */
 
