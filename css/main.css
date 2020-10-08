@@ -235,6 +235,17 @@ body{
 	display: block;
 }
 
+/* Extra small devices (phones, less than 767px) */
+@media (min-width: 320px) and (max-width: 767px) {
+    .realisations{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: max-content;
+    }
+}
+
+
+
 /* Contact section */
 
 
