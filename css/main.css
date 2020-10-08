@@ -72,9 +72,80 @@ body{
 }
 
 
-
-
 /* Seconde section end*/
+
+
+/* Activities section */
+
+.activities{
+    background-image: url(/images/activities-bg.png);
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+.activities h1{
+    font-family: Lobster;
+    font-size: 40px;
+    color: #5ABF28;
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.activities img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    height: 120px;
+}
+
+.activities h3{
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    color: #B4B4B4;
+    cursor: pointer;
+}
+
+.activities h3:hover{
+    color: #5ABF28
+}
+
+.activitie-active{
+    color: #5ABF28 !important;
+}
+
+.activitieBtn-active{
+    border: 2px solid #5ABF28 !important;
+    color: #5ABF28;
+}
+
+.activities button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #B4B4B4;
+    color: #B4B4B4;
+    background-color: transparent;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.activities button:hover{
+    border: 2px solid #5ABF28 !important;
+    color: #5ABF28;
+}
+
+
+/* Activities section end */
+
+
 
 /* Contact section */
 
