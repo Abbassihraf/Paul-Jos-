@@ -78,7 +78,7 @@ body{
 /* Activities section */
 
 .activities{
-    background-image: url(/images/activities-bg.png);
+    background-image: url(/images/activities-bg.png);  
     padding-top: 8rem;
     padding-bottom: 8rem;
 }
@@ -108,6 +108,7 @@ body{
     margin-bottom: 32px;
     color: #B4B4B4;
     cursor: pointer;
+    transition: 0.4s;
 }
 
 .activities h3:hover{
@@ -135,6 +136,7 @@ body{
     width: 48px;
     font-weight: 700;
     text-align: center;
+    transition: 0.4s;
 }
 
 .activities button:hover{
@@ -142,6 +144,19 @@ body{
     color: #5ABF28;
 }
 
+
+/* Extra small devices (phones, less than 767px) */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .activities{
+        background-repeat: no-repeat;  
+        background-size: cover;      
+    }
+
+    .entretien-div{
+        margin-top: 56px;
+    }
+}
 
 /* Activities section end */
 
