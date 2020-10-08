@@ -190,6 +190,12 @@ body{
     }
 }
 
+/*  Large devices (Ipad pro, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px) { 
+    .contact-card h3{
+        font-size: 16px !important;
+    }
+}
 
 
 
