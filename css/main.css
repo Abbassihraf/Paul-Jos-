@@ -2,6 +2,99 @@ body{
     margin: 0;
     padding: 0;
 }
+
+/* Navbar */
+
+.navbar{
+    margin-bottom: 0px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 100%;
+    padding: 4rem;
+}
+
+.logo-title{
+    color: #5ABF28;
+    font-family: Lobster;
+    font-size: 24px;
+    padding-left: 8px;
+}
+
+.navbar-header{
+    grid-area: 1/1;
+    grid-row: 1/2;
+    margin: auto auto auto 0px;
+}
+
+
+.navbar-collapse.collapse{
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+
+.navbar-inverse {
+    border: none;
+}
+
+
+.navbar-inverse .navbar-nav>li>a{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    color: #969696;
+    transition: .6s;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+    color: #5ABF28 !important;
+}
+
+.navbar-nav .active a{
+    color: #5ABF28 !important;
+    background-color: transparent !important;
+}
+
+.navbar-right a i{
+    font-size: 24px;
+    transition: .6s;
+
+}
+
+@media (min-width: 320px) and (max-width: 768px){
+    .navbar{
+        display: block;
+        padding: 2rem;
+    }
+
+    .navbar-toggle{
+        background-color: #5ABF28;
+        color: white;
+        border: #5ABF28;
+        margin-right: 0px;
+    }
+
+    .navbar-toggle:hover{
+        background-color: #5ABF28 !important;
+    }
+
+    .navbar-right{
+        display: grid;
+        grid-template-columns: max-content max-content max-content max-content;
+        grid-template-rows: max-content;
+    }
+
+    .logo-title{
+        padding-left: 0px;
+    }
+}
+
+ 
+
+/* Navbar End */
+
+
 /* Header */
 
 header{
