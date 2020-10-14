@@ -62,7 +62,7 @@ body{
 
 }
 
-@media (min-width: 320px) and (max-width: 768px){
+@media (min-width: 320px) and (max-width: 767px){
     .navbar{
         display: block;
         padding: 2rem;
@@ -87,6 +87,27 @@ body{
 
     .logo-title{
         padding-left: 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .navbar{
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+    }
+
+    .logo-title{
+        font-size: 14px;
+    }
+
+    .navbar-inverse .navbar-nav>li>a{
+        font-size: 10px;
+    }
+
+    .navbar-collapse{
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
 
