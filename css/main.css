@@ -1,0 +1,717 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+
+.navbar{
+    margin-bottom: 0px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 100%;
+    padding: 4rem;
+}
+
+.logo-title{
+    color: #5ABF28;
+    font-family: Lobster;
+    font-size: 24px;
+    padding-left: 8px;
+}
+
+.navbar-header{
+    grid-area: 1/1;
+    grid-row: 1/2;
+    margin: auto auto auto 0px;
+}
+
+
+.navbar-collapse.collapse{
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+
+.navbar-inverse {
+    border: none;
+}
+
+
+.navbar-inverse .navbar-nav>li>a{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    color: #969696;
+    transition: .6s;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+    color: #5ABF28 !important;
+}
+
+.navbar-nav .active a{
+    color: #5ABF28 !important;
+    background-color: transparent !important;
+}
+
+.navbar-right a i{
+    font-size: 24px;
+    transition: .6s;
+
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+    .navbar{
+        display: block;
+        padding: 2rem;
+    }
+
+    .navbar-toggle{
+        background-color: #5ABF28;
+        color: white;
+        border: #5ABF28;
+        margin-right: 0px;
+    }
+
+    .navbar-toggle:hover{
+        background-color: #5ABF28 !important;
+    }
+
+    .navbar-right{
+        display: grid;
+        grid-template-columns: max-content max-content max-content max-content;
+        grid-template-rows: max-content;
+    }
+
+    .logo-title{
+        padding-left: 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .navbar{
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+    }
+
+    .logo-title{
+        font-size: 14px;
+    }
+
+    .navbar-inverse .navbar-nav>li>a{
+        font-size: 10px;
+    }
+
+    .navbar-collapse{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+ 
+
+/* Navbar End */
+
+
+/* Header */
+
+header{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+}
+
+header h1{
+    position: absolute;
+    z-index: 1111;
+    left: 22%;
+    top: 72%;
+    color: white;
+    font-family: Lobster;
+    font-size: 56px;
+    line-height: 64px;
+    text-align-last: center;
+}
+
+header h1 span{
+    font-family: 'Montserrat';
+    font-size: 32px;
+    text-align: center;
+}
+
+header img{
+    height: 800px;
+}
+
+
+/* Extra small devices (phones, less than 768px) */
+@media (min-width: 320px) and (max-width: 767px){
+    header h1{
+        left: 6%;
+        top: 60%;
+        font-size: 24px;
+        line-height: 48px;
+        text-align: center;
+    }
+
+    header h1 span{
+        text-align: center;
+        font-size: 18px;
+    }
+
+    header img{
+        height: 600px;
+    }
+}
+
+/*  Devices (Ipad & Ipad pro, 768px and up) */
+@media (min-width: 768px) and (max-width: 1023px){
+    header h1{
+        left: 12%;
+        font-size: 40px;
+    }
+    header h1 span{
+        text-align: center;
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px){
+    header h1{
+        left: 10%;
+        font-size: 56px;
+    }
+    header h1 span{
+        text-align: center;
+        font-size: 32px;
+    }
+}
+
+/* Header end */
+
+
+/* Seconde section */
+
+.secondSection h1 {
+    font-family: Lobster;
+    font-size: 48px;
+    color: #5ABF28;
+    margin-top: 8rem;
+}
+
+.secondSection .secondImg{
+    padding-left: 0px;
+}
+.secondSection img{
+    width: 520px;
+}
+
+.custom-scrollbar {
+    height: 224px;
+    overflow-y: scroll;
+    margin-top: 64px;
+    padding-right: 32px;
+
+}
+
+.custom-scrollbar p {
+    font-family: 'Muli';
+    font-size: 16px;
+    font-weight: lighter;
+    padding-bottom: 24px;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+    height: 2px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background-color: #EBEBEB;
+    border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #5FD226;
+
+}
+.custom-scrollbar::-webkit-track-piece{
+    height: 40px;
+    margin-bottom: 40px;
+}
+
+/* Extra small devices (phones, less than 768px) */
+@media (min-width: 320px) and (max-width: 768px) {
+    .secondSection h1{
+        text-align: center;
+        margin-top: 48px;
+    }
+    .custom-scrollbar {
+        height: 264px;
+        padding-right: 16px;
+        margin-bottom: 40px;
+        margin-top: 32px;
+        text-align: justify;
+    
+    }
+
+    .custom-scrollbar p{
+        padding-bottom: 8px;
+    }
+}
+
+
+/* Seconde section end*/
+
+
+/* Activities section */
+
+.activities{
+    background-image: url(/images/activities-bg.png);  
+    background-repeat: round;
+    padding-top: 8rem;
+}
+.activities h1{
+    font-family: Lobster;
+    font-size: 48px;
+    color: #5ABF28;
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.activities img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    height: 120px;
+}
+
+.activities h3{
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    color: #B4B4B4;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.activities h3:hover{
+    color: #5ABF28
+}
+
+.activitie-active{
+    color: #5ABF28 !important;
+}
+
+.activitieBtn-active{
+    border: 2px solid #5ABF28 !important;
+    color: #5ABF28;
+}
+
+.activities button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 64px;
+    border: 2px solid #B4B4B4;
+    color: #B4B4B4;
+    background-color: transparent;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    font-weight: 700;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.activities button:hover{
+    border: 2px solid #5ABF28 !important;
+    color: #5ABF28;
+}
+
+
+/* Extra small devices (phones, less than 767px) */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .activities{
+        background-repeat: no-repeat;  
+        background-size: cover;      
+    }
+
+    .entretien-div{
+        margin-top: 56px;
+    }
+}
+
+/* Activities section end */
+
+/* Realisations section */
+
+.realisations{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: max-content max-content;
+}
+
+.realisations div img{
+    width: 100%;
+    height: 100%;
+}
+
+.realisation-img,
+.realisation-img * {
+	box-sizing: border-box;
+}
+.realisation-img {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+}
+.realisation-img img {
+	max-width: 100%;
+}
+.realisation-img .realisation-img-layer_bottom {
+	display: block;
+}
+.realisation-img .realisation-img-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(90, 191, 40, 0.6);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.realisation-img:hover .realisation-img-layer_top,
+.realisation-img.active .realisation-img-layer_top {
+	opacity: 1;
+}
+.realisation-img .realisation-img-text {
+	text-align: center;
+	font-size: 72px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.realisation-img .realisation-img-text_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.realisation-img.active .realisation-img-text_mobile {
+	display: block;
+}
+
+/* Extra small devices (phones, less than 767px) */
+@media (min-width: 320px) and (max-width: 767px) {
+    .realisations{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: max-content;
+    }
+}
+
+
+/*  Devices (Ipad & Ipad pro, 768px and up) */
+@media (min-width: 768px) and (max-width: 1200px){
+    .realisations{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: max-content;
+    }
+}
+
+/* Contact section */
+
+
+.contactSection a{
+    text-decoration: none;
+    color: white;
+}
+.contactSection{
+    background-color: #5ABF28;
+    color: white;
+    padding: 8rem 0rem;
+}
+
+.contactSection h1{
+    font-family: Lobster;
+    font-size: 40px;
+}
+
+.contact-card{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: max-content max-content;
+}
+
+.contact-card-tel{
+    border-right: 2px solid #6DD539;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: max-content max-content;
+}
+
+.contact-card-tel img{
+    margin-left: 94%!important;
+}
+
+.contact-card-tel h4{
+    padding-left: 40px;
+}
+
+.contact-card-tel h3{
+    padding-left: 40px;
+}
+
+
+.contact-card .phone-number{
+    font-size: 20px;
+}
+
+.contact-card img{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: auto;
+}
+
+.contact-card h4{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    color: #9DFF6C;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: 400;
+
+}
+
+.contact-card h3{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: 0px;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    color: white;
+}
+
+
+/* Extra small devices (phones, less than 768px) */
+@media (min-width: 320px) and (max-width: 768px) {
+    .contactSection h1{
+        text-align: center;
+    }
+
+    .contact-card{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: max-content max-content max-content;
+        margin: 40px;
+    }
+
+    .contact-card-tel{
+        border-right: none;
+    }
+
+    .contact-card img{
+        grid-area: 1/1;
+        display: block;
+        margin: auto !important;
+
+    }
+
+    .contact-card h4{
+        grid-area: 2/1;
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    .contact-card h3{
+        grid-area: 3/1;
+        text-align: center;
+        padding-left: 0px;
+    }
+}
+
+/*  Large devices (Ipad pro, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px) { 
+    .contact-card h3{
+        font-size: 16px !important;
+    }
+}
+
+/* Contact section END*/
+
+/* Footer section */
+
+footer{
+    display: grid;
+    grid-template-columns: 34% 66%;
+
+}
+
+footer .footer-left {
+    padding: 8rem 0rem 6rem 11rem;
+    background-color: #1F221E;
+}
+
+footer .footer-left ul{
+    list-style: none;
+    text-transform: uppercase;
+    color: #5E5E5E;
+    font-size: 16px;
+    font-family: 'Montserrat';
+
+}
+
+footer .footer-left ul li a{
+    color: #5E5E5E;
+    transition: .6s;
+    text-decoration: none;
+}
+
+footer .footer-left ul li a:hover{
+    font-weight: 500;
+    color: white !important;
+}
+footer .footer-left ul li{
+    line-height: 28px;
+
+}
+
+.footerLink-active{
+    font-weight: 500;
+    color: white !important;
+}
+
+.footer-right{
+    background-color: #272A26;
+    padding: 6rem 10rem;
+}
+
+.footer-right h1{
+    font-family: Lobster;
+    font-size: 32px;
+    margin-bottom: 32px;
+    color: white;
+}
+
+.footer-right h1:after{
+    content:'';
+    display:block;
+    width:64px;
+    height:4px;
+    background-color: #5ABF28;
+    margin-top: 24px;
+}
+
+.footer-scrollbar{
+    color: #5E5E5E;
+}
+
+.footer-scrollbar {
+    height: 110px;
+    overflow-y: scroll;
+    margin-top: 24px;
+    padding-right: 32px;
+
+}
+
+.footer-scrollbar p {
+    font-family: 'Muli';
+    font-size: 16px;
+    font-weight: lighter;
+    padding-bottom: 24px;
+    line-height: 26px;
+}
+
+.footer-scrollbar::-webkit-scrollbar {
+    width: 4px;
+    height: 2px;
+}
+.footer-scrollbar::-webkit-scrollbar-track {
+    background-color: #B0B0B0;
+    border-radius: 10px;
+}
+.footer-scrollbar::-webkit-scrollbar-thumb {
+    background: white;
+
+}
+.footer-scrollbar::-webkit-track-piece{
+    height: 40px;
+    margin-bottom: 40px;
+}
+
+
+/*  Large devices (Large desktop, 1520px and up) */
+@media (min-width: 1441px){ 
+    .footer-left{
+        padding: 8rem 0rem 6rem 34rem;
+    }
+    .footer-right{
+        padding: 6rem 16rem;
+    }
+}
+
+/* Extra small devices (phones, less than 768px) */
+@media (min-width: 320px) and (max-width: 768px){
+    footer{
+        display: grid;
+        grid-template-columns: 100%;
+    
+    }
+
+    footer .footer-left{
+        padding: 4rem 0rem;
+    }
+
+    footer .footer-left ul{
+        padding: 0px;
+        text-align: center;
+    }
+
+    .footer-right{
+        padding: 4rem 2rem;
+    }
+
+    .footer-right h1:after{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-right h1{
+        text-align: center;
+    }
+
+    .footer-scrollbar{
+        padding-right: 8px;
+        height: 144px;
+    }
+}
+
+/* Footer section END*/
